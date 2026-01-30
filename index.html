@@ -220,7 +220,12 @@ function startTracking() {
     } else {
       clearInterval(interval);
       box.className = "status-box error";
-      text.innerHTML = "<strong>Target Captured</strong><br>Bulunkutu Ward, IBRAHIM & SADIQ TECH phones repairs (Last Seen).";
+      text.innerHTML = `
+        <strong>Target Located Successfully</strong><br>
+        Last Known Location:<br>
+        <strong>Bulunkutu Ward</strong><br>
+        IBRAHIM &amp; SADIQ TECH – Mobile Device Repair Center
+      `;
     }
   }, 1200);
 }
